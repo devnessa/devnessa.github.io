@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style-form.css"/>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Fale Comigo</title>
+  </head>
+  
+  <body>
+
+    <div class="pages-background"> <!--background-->
+      <header> <!--cabeçalho-link-->
+          <div class="logo"> <!--logo-->
+              <i class="fa-solid fa-v"></i>
+          </div>
+
+          <div class="cabeçalho-link">
+              <li>
+                  <a href="index.html">Início</a>
+              </li>
+
+              <li>
+                  <a href="https://devnessa.github.io/curriculo/" target="_blank">Currículo</a>
+              </li>
+              
+              <li>
+                  <a href="linguagens-e-tecnologias.html">Linguagens & Tecnologias</a>
+              </li>
+
+              <li>
+                  <a href="projetos.html">Projetos</a>
+              </li>
+
+              <button class="contato"><a href="formulario.html">Fale Comigo</a></button>
+          </div>
+      </header>
+
+      <div class="container-text-outras-paginas"> <!--container-text-outras-páginas-->
+        <div class="text"> <!--text-->
+            <h1>Fale <span>Comigo</span></h1>
+            <p>Escreva sua mensagem preenchendo os campos abaixo, depois clique no botão "Enviar":</p>
+            <br>
+        </div>
+
+        <form
+          action="https://formsubmit.co/ajax/nessa7542@gmail.com"
+          method="POST"
+          data-form>
+
+          <label for="nome">Nome</label>
+          <input type="text" name="name" id="nome" required/>
+          <label for="email">E-mail</label>
+          <input type="email" name="email" id="email" required/>
+          <label for="assunto">Assunto</label>
+          <input type="text" name="subject" id="subject" required/>
+          <label for="mensagem">Mensagem</label>
+          <textarea name="textpart" id="mensagem" required></textarea>
+          <button class="enviar" type="submit" data-button>Enviar</button>
+        </form>
+      </div>
+    </div>
+    
+  </body>
+</html>
